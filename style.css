@@ -1,7 +1,7 @@
-/*#region Variables */
+/*#region Variables*/
 /*#endregion*/
 
-/*#region Basic Settings */
+/*#region Basic Settings*/
 *,
 *::before,
 *::after {
@@ -29,7 +29,7 @@ body {
 }
 /*#endregion*/
 
-/*#region Menu */
+/*#region Menu*/
 header {
 	font-family: HindLight, sans-serif;
 	width: 100%;
@@ -71,7 +71,7 @@ nav {
 	text-align: center;
 	align-items: center;
 	width: 100%;
-	transform: translateX(-100%);
+	transform: translateY(-100%);
 	transition: transform 0.25s ease-in;
 	backdrop-filter: blur(5px);
 	padding-top: 75px;
@@ -95,7 +95,7 @@ nav {
 }
 
 .nav-active {
-	transform: translateX(0%);
+	transform: translateY(0%);
 }
 
 .burger {
@@ -144,17 +144,17 @@ nav {
 @keyframes navLinkFade {
 	from {
 		opacity: 0;
-		transform: translateX(-50px);
+		transform: translateY(-25px);
 	}
 
 	to {
 		opacity: 1;
-		transform: translateX(0px);
+		transform: translateY(0px);
 	}
 }
 /*#endregion*/
 
-/*#region Home Page Banner */
+/*#region Home Page Banner*/
 .home-page-banner {
 	width: 100%;
 	height: 100vh;
@@ -216,6 +216,19 @@ nav {
 }
 /*#endregion*/
 
+/*#region Page Content*/
+#learn {
+	height: 500px;
+	background-color: black;
+}
+
+#learn h1 {
+	font-family: HindLight;
+	color: white;
+	font-size: 36px;
+}
+/*#endregion*/
+
 /*#region Media Queries*/
 /*#region Extra Small Devices*/
 /* Extra small devices (phones, 600px and down) */
@@ -233,10 +246,10 @@ nav {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	nav {
-		width: calc(100vw - 2 * 125px);
+		width: calc(100vw - 2 * 15%);
 	}
 
-	.nav-links {
+	nav .nav-links {
 		display: flex;
 		justify-content: flex-end;
 		position: relative;
@@ -268,15 +281,27 @@ nav {
 /*#region Large Devices*/
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+	nav {
+		width: calc(100vw - 2 * 25%);
+	}
 }
 /*#endregion*/
 
 /*#region Extra Large Devices*/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
 /*#endregion*/
 
-@media only screen and (max-height: 768px) and (max-width: 600px) @media only screen and (max-height: 768px) {
+@media only screen and (max-height: 768px) {
 	.home-page-banner {
 		height: 768px;
+	}
+
+	@media only screen and (max-height: 768px) {
+		.nav-links {
+			height: 768px;
+		}
 	}
 }
 /*#endregion*/
