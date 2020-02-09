@@ -55,7 +55,7 @@ header .logo-container h1 {
 
 nav {
 	display: flex;
-	width: calc(100vw - 2 * 75px);
+	width: calc(100vw - 2 * 15px);
 	margin: auto;
 	height: 100%;
 }
@@ -106,13 +106,13 @@ nav {
 	clear: right;
 	position: absolute;
 	top: 25px;
-	right: 75px;
+	right: 0;
 }
 
 .burger div {
 	width: 25px;
 	height: 3px;
-	background-color: #f0f1eb;
+	background-color: white;
 	transition: all 0.25s ease;
 }
 
@@ -178,7 +178,6 @@ nav {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 0 75px;
 }
 
 .home-page-banner-content .small-text h1 {
@@ -188,7 +187,7 @@ nav {
 }
 
 .home-page-banner-content .large-text h1 {
-	font-size: 60px;
+	font-size: 50px;
 	font-family: HindSemiBold;
 	display: none;
 }
@@ -224,6 +223,10 @@ nav {
 /*#endregion*/
 
 /*#region Page Content*/
+.main-content {
+	padding: 0 15px;
+}
+
 #learn {
 	height: 500px;
 	background-color: black;
@@ -246,6 +249,17 @@ nav {
 /*#region Small Devices*/
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	nav {
+		width: calc(100vw - 2 * 75px);
+	}
+
+	.burger {
+		right: 60px;
+	}
+
+	.main-content {
+		padding: 0 75px;
+	}
 }
 /*#endregion*/
 
@@ -298,6 +312,10 @@ nav {
 	.home-page-banner-content .sub-title p {
 		font-size: 24px;
 	}
+
+	.main-content {
+		padding: 0 15%;
+	}
 }
 /*#endregion*/
 
@@ -305,7 +323,15 @@ nav {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	nav {
-		width: calc(100vw - 2 * 17.5%);
+		width: calc(100vw - 2 * 25%);
+	}
+
+	.home-page-banner-content .large-text h1 {
+		font-size: 60px;
+	}
+
+	.main-content {
+		padding: 0 25%;
 	}
 }
 /*#endregion*/
