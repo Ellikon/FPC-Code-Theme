@@ -205,9 +205,9 @@ nav {
 }
 
 .home-page-banner-button button {
-	width: 300px;
-	height: 125px;
-	font-size: 36px;
+	width: 250px;
+	height: 100px;
+	font-size: 32px;
 	position: absolute;
 	top: 375px;
 	border: 0;
@@ -224,18 +224,49 @@ nav {
 
 /*#region Page Content*/
 .main-content {
-	padding: 0 15px;
+	margin: 15px;
 }
 
 #learn {
-	height: 500px;
+	height: 675px;
 	background-color: black;
 }
 
 #learn h1 {
 	font-family: HindLight;
 	color: white;
-	font-size: 36px;
+	text-align: left;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 50px;
+}
+
+#learn h2 {
+	font-family: HindBold;
+	color: white;
+	text-align: left;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+#learn p {
+	font-family: HindRegular;
+	color: white;
+	text-align: left;
+	font-size: 16px;
+	margin-top: 50px;
+	width: 75%;
+}
+
+.main-content-container .main-content-image {
+	bottom: 0;
+}
+
+.main-content-image img {
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
 }
 /*#endregion*/
 
@@ -258,7 +289,20 @@ nav {
 	}
 
 	.main-content {
-		padding: 0 75px;
+		padding: 0 75px 0px 75px;
+	}
+
+	#learn h1 {
+		font-size: 24px;
+	}
+
+	#learn h2 {
+		font-size: 24px;
+	}
+
+	#learn p {
+		font-size: 20px;
+		width: 75%;
 	}
 }
 /*#endregion*/
@@ -313,8 +357,22 @@ nav {
 		font-size: 24px;
 	}
 
+	.home-page-banner-button button {
+		width: 300px;
+		height: 125px;
+		font-size: 36px;
+	}
+
 	.main-content {
-		padding: 0 15%;
+		padding: 0 15% 0px 15%;
+	}
+
+	#learn h1 {
+		font-size: 28px;
+	}
+
+	#learn h2 {
+		font-size: 28px;
 	}
 }
 /*#endregion*/
@@ -331,7 +389,7 @@ nav {
 	}
 
 	.main-content {
-		padding: 0 25%;
+		padding: 0 25% 0px 25%;
 	}
 }
 /*#endregion*/
