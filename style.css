@@ -181,16 +181,23 @@ nav {
 	padding: 0 75px;
 }
 
-.home-page-banner-content h1 {
-	font-size: 60px;
+.home-page-banner-content .small-text h1 {
+	font-size: 50px;
 	display: block;
-	font-family: HindBold;
+	font-family: HindSemiBold;
 }
 
-.home-page-banner-content p {
+.home-page-banner-content .large-text h1 {
+	font-size: 60px;
+	font-family: HindSemiBold;
+	display: none;
+}
+
+.home-page-banner-content .sub-title p {
 	display: block;
-	font-size: 24px;
+	font-size: 20px;
 	font-family: HindLight;
+	margin-top: 25px;
 }
 
 .home-page-banner-button {
@@ -203,7 +210,7 @@ nav {
 	height: 125px;
 	font-size: 36px;
 	position: absolute;
-	top: 250px;
+	top: 375px;
 	border: 0;
 	background-color: black;
 	color: white;
@@ -275,6 +282,22 @@ nav {
 	.burger {
 		display: none;
 	}
+
+	.home-page-banner-content {
+		padding: 0 15%;
+	}
+
+	.home-page-banner-content .small-text h1 {
+		display: none;
+	}
+
+	.home-page-banner-content .large-text h1 {
+		display: block;
+	}
+
+	.home-page-banner-content .sub-title p {
+		font-size: 24px;
+	}
 }
 /*#endregion*/
 
@@ -282,7 +305,7 @@ nav {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	nav {
-		width: calc(100vw - 2 * 25%);
+		width: calc(100vw - 2 * 17.5%);
 	}
 }
 /*#endregion*/
@@ -320,5 +343,10 @@ nav {
 @font-face {
 	font-family: HindBold;
 	src: url("/fonts/Hind-Bold.ttf");
+}
+
+@font-face {
+	font-family: HindSemiBold;
+	src: url("/fonts/Hind-SemiBold.ttf");
 }
 /*#endregion*/
