@@ -225,7 +225,7 @@ nav {
 
 /*#region Page Content*/
 .main-content-container {
-    height: 1125px;
+    height: 1062.5px;
     position: relative;
 }
 
@@ -327,6 +327,10 @@ nav {
         right: 60px;
     }
 
+    .main-content-container {
+        height: 1250px;
+    }
+
     .main-content-container .main-content {
         margin: 0 75px;
     }
@@ -345,6 +349,10 @@ nav {
     #web-design p {
         font-size: 20px;
         width: 75%;
+    }
+
+    .main-content-container .main-content-image {
+        height: 800px;
     }
 }
 /*#endregion*/
@@ -417,6 +425,16 @@ nav {
     #learn h2,
     #web-design h2 {
         font-size: 28px;
+    }
+
+    #learn h1,
+    #learn h2,
+    #learn p {
+        float: left;
+    }
+
+    .main-content-container .main-content-image img {
+        float: right;
     }
 }
 /*#endregion*/
