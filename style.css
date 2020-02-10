@@ -223,50 +223,88 @@ nav {
 /*#endregion*/
 
 /*#region Page Content*/
-.main-content {
-	margin: 15px;
+.main-content-container {
+	height: 1125px;
+	position: relative;
 }
 
-#learn {
-	height: 675px;
-	background-color: black;
+.main-content-container .main-content {
+	margin: 0 15px;
+	padding-top: 15px;
 }
 
-#learn h1 {
+#learn h1,
+#web-design h1 {
 	font-family: HindLight;
-	color: white;
 	text-align: left;
 	font-size: 20px;
 	letter-spacing: 1px;
-	line-height: 50px;
 }
 
-#learn h2 {
+#learn h2,
+#web-design h2 {
 	font-family: HindBold;
-	color: white;
 	text-align: left;
 	font-size: 20px;
 	letter-spacing: 1px;
-	line-height: 25px;
 }
 
-#learn p {
+#learn p,
+#web-design p {
 	font-family: HindRegular;
-	color: white;
 	text-align: left;
 	font-size: 16px;
 	margin-top: 50px;
 	width: 75%;
 }
 
-.main-content-container .main-content-image {
-	bottom: 0;
+#learn {
+	background-color: black;
 }
 
-.main-content-image img {
-	height: 250px;
+#learn h1 {
+	color: white;
+}
+
+#learn h2 {
+	color: white;
+}
+
+#learn p {
+	color: white;
+}
+
+#web-design {
+	background-color: white;
+}
+
+#web-design h1 {
+	color: black;
+}
+
+#web-design h2 {
+	color: black;
+}
+
+#web-design p {
+	color: black;
+}
+
+.main-content-container .main-content-image {
+	bottom: 0;
+	position: absolute;
+}
+
+.main-content-container .main-content-image {
+	height: 750px;
+	width: 100%;
+}
+
+.main-content-container .main-content-image img {
+	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	bottom: 0;
 }
 /*#endregion*/
 
@@ -289,18 +327,21 @@ nav {
 	}
 
 	.main-content {
-		padding: 0 75px 0px 75px;
+		margin: 0 75px;
 	}
 
-	#learn h1 {
+	#learn h1,
+	#web-design h1 {
 		font-size: 24px;
 	}
 
-	#learn h2 {
+	#learn h2,
+	#web-design h2 {
 		font-size: 24px;
 	}
 
-	#learn p {
+	#learn p,
+	#web-design p {
 		font-size: 20px;
 		width: 75%;
 	}
@@ -367,11 +408,13 @@ nav {
 		padding: 0 15% 0px 15%;
 	}
 
-	#learn h1 {
+	#learn h1,
+	#web-design h1 {
 		font-size: 28px;
 	}
 
-	#learn h2 {
+	#learn h2,
+	#web-design h2 {
 		font-size: 28px;
 	}
 }
