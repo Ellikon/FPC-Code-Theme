@@ -242,6 +242,7 @@ nav {
     text-align: left;
     font-size: 20px;
     letter-spacing: 1px;
+    width: 100%;
 }
 
 #learn h2,
@@ -250,6 +251,7 @@ nav {
     text-align: left;
     font-size: 20px;
     letter-spacing: 1px;
+    width: 100%;
 }
 
 #learn p,
@@ -265,14 +267,8 @@ nav {
     background-color: black;
 }
 
-#learn h1 {
-    color: white;
-}
-
-#learn h2 {
-    color: white;
-}
-
+#learn h1,
+#learn h2,
 #learn p {
     color: white;
 }
@@ -281,14 +277,8 @@ nav {
     background-color: white;
 }
 
-#web-design h1 {
-    color: black;
-}
-
-#web-design h2 {
-    color: black;
-}
-
+#web-design h1,
+#web-design h2,
 #web-design p {
     color: black;
 }
@@ -387,7 +377,6 @@ nav {
     #learn p,
     #web-design p {
         font-size: 20px;
-        width: 75%;
     }
 
     .main-content-container .main-content-button button {
@@ -465,19 +454,27 @@ nav {
 
     .main-content-container .main-content {
         margin: 0 15%;
-        padding-top: 37.5px;
+        padding-top: 0px;
     }
 
     .main-content-container .main-content-button {
         position: absolute;
+        display: block;
+        bottom: 625px;
     }
 
     .main-content-container .main-content-button button {
         width: 225px;
         height: 100px;
-        bottom: 1000px;
+        bottom: 750px;
         font-size: 24px;
-        position: absolute;
+    }
+
+    .main-content-container .main-content-header {
+        display: block;
+        padding-top: 37.5px;
+        width: 100%;
+        background-color: blue;
     }
 
     #learn h1,
@@ -485,19 +482,20 @@ nav {
     #web-design h1,
     #web-design h2 {
         font-size: 28px;
-        background-color: aqua;
         width: 100%;
     }
 
     #learn .main-content p,
-    #learn .main-content-header {
+    #learn .main-content-header,
+    #learn .main-content-header * {
+        text-align: left;
         float: left;
     }
 
     #learn .main-content-button {
-        display: block;
-        float: left;
+        left: 0;
         margin-left: 15%;
+        z-index: 9999;
     }
 
     #learn .main-content-image {
@@ -512,23 +510,18 @@ nav {
         height: 100%;
         vertical-align: top;
         z-index: 9999;
-        display: none;
+        filter: brightness(125%);
     }
 
     #web-design .main-content p,
+    #web-design .main-content-header,
     #web-design .main-content-header * {
         text-align: right;
-    }
-
-    #web-design .main-content p,
-    #web-design .main-content-header {
         float: right;
     }
 
     #web-design .main-content-button {
-        display: block;
-        float: right;
-        position: relative;
+        right: 225px;
         margin-right: 15%;
     }
 
@@ -551,6 +544,16 @@ nav {
 
     .main-content-container .main-content {
         margin: 0 25%;
+    }
+
+    #learn .main-content-button {
+        left: 0;
+        margin-left: 25%;
+    }
+
+    #web-design .main-content-button {
+        right: 225px;
+        margin-right: 25%;
     }
 }
 /*#endregion*/
