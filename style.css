@@ -502,10 +502,13 @@ header .logo-container h1 {
         float: right;
     }
 
+    #learn .main-content-image {
+        float: right;
+    }
+
     #learn .main-content-image,
     #web-design .main-content-image {
         position: relative;
-        float: right;
         width: 187.5px;
         height: 100%;
         vertical-align: top;
