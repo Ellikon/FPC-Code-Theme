@@ -358,14 +358,12 @@ header .logo-container h1 {
 }
 
 #projects {
-    display: flex;
-    flex: 1;
-    margin: 0 25%;
+    display: block;
 }
 
 .project {
-    width: 175px;
-    margin: auto;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .project img {
