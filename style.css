@@ -376,15 +376,24 @@ header .logo-container h1 {
     transition: 0.25s;
 }
 
-.project-header {
+.project .project-header {
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.project h1 {
-    font-size: 28px;
+.project .project-header h3 {
+    font-size: 32.5px;
+    font-family: HindSemiBold;
     color: black;
+    text-align: left;
+    width: 75%;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    margin: 15px 0 0 15px;
+    transition: 0.25s;
 }
 
 #project-2 {
@@ -393,6 +402,10 @@ header .logo-container h1 {
 
 .project:hover img {
     opacity: 0.125;
+}
+
+.project:hover h3 {
+    color: white;
 }
 /*#endregion*/
 
