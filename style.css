@@ -341,10 +341,6 @@ header .logo-container h1 {
 /*#endregion*/
 
 /*#region Project Highlights*/
-#project-highlights {
-    height: 500px;
-}
-
 #project-highlights #project-highlights-header {
     background-color: black;
     height: 125px;
@@ -359,6 +355,7 @@ header .logo-container h1 {
 
 #projects {
     display: block;
+    margin-bottom: 15px;
 }
 
 .project {
@@ -381,7 +378,7 @@ header .logo-container h1 {
     left: 0;
     height: 75px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.875);
+    background-color: rgba(0, 0, 0, 0.9375);
     transition: 0.25s;
 }
 
@@ -401,16 +398,16 @@ header .logo-container h1 {
 
 .project .project-information {
     position: absolute;
-    top: 75px;
+    top: 90px;
     left: 0;
     opacity: 0;
 }
 
 .project .project-information p {
-    font-size: 20px;
+    font-size: 22px;
     font-family: HindRegular;
     color: white;
-    padding: 30px 25% 0 15px;
+    padding: 30px 12.5% 0 15px;
 }
 
 #project-2 {
@@ -477,13 +474,13 @@ header .logo-container h1 {
     }
 
     .project .project-header h3 {
-        font-size: 30px;
+        font-size: 35px;
         padding: 0 12.5% 0 75px;
     }
 
     .project .project-information p {
-        font-size: 24px;
-        padding: 30px 25% 0 75px;
+        font-size: 22px;
+        padding: 30px 12.5% 0 75px;
     }
 }
 /*#endregion*/
@@ -632,12 +629,8 @@ header .logo-container h1 {
     }
 
     #projects {
-        display: flex;
-        margin: 15px 7.5% 0 7.5%;
-    }
-
-    #project-2 {
-        margin: 0 15px;
+        display: block;
+        margin: 15px 30%;
     }
 
     .project {
@@ -657,12 +650,12 @@ header .logo-container h1 {
     }
 
     .project .project-information {
-        top: 50px;
+        top: 65px;
     }
 
     .project .project-information p {
         font-size: 16px;
-        padding: 0 25% 0 15px;
+        padding: 0 12.5% 0 15px;
     }
 }
 /*#endregion*/
@@ -697,7 +690,12 @@ header .logo-container h1 {
     }
 
     #projects {
-        margin: 15px 12.5% 0 12.5%;
+        display: flex;
+        margin: 15px 12.5%;
+    }
+
+    #project-2 {
+        margin: 0 15px;
     }
 
     .project .project-header h3 {
