@@ -355,7 +355,7 @@ header .logo-container h1 {
 
 #projects {
     display: block;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 .project {
@@ -408,10 +408,29 @@ header .logo-container h1 {
     font-family: HindRegular;
     color: white;
     padding: 30px 12.5% 0 15px;
+    transition: 0.25s;
 }
 
 #project-2 {
     margin: 15px 0;
+}
+
+#project-highlights-button {
+    height: 100px;
+    width: calc(100% - 15px * 2);
+    margin: 0 auto 15px auto;
+}
+
+#project-highlights-button button {
+    height: 100%;
+    width: 100%;
+    border: 2.5px black solid;
+    color: white;
+    background-color: black;
+    font-size: 32.5px;
+    font-family: HindLight;
+    transition: 0.25s;
+    cursor: pointer;
 }
 
 .project:hover .project-header {
@@ -421,6 +440,14 @@ header .logo-container h1 {
 .project:hover .project-information {
     opacity: 100%;
 }
+
+#project-highlights-button:hover button {
+    background-color: white;
+    color: black;
+}
+/*#endregion*/
+
+/*#region Footer*/
 /*#endregion*/
 
 /*#region Media Queries*/
@@ -657,6 +684,17 @@ header .logo-container h1 {
         font-size: 16px;
         padding: 0 12.5% 0 15px;
     }
+
+    #project-highlights-button {
+        height: 100px;
+        width: 40%;
+        margin: 0 auto 15px auto;
+    }
+
+    #project-highlights-button button {
+        height: 100%;
+        width: 100%;
+    }
 }
 /*#endregion*/
 
@@ -704,6 +742,17 @@ header .logo-container h1 {
 
     .project .project-information p {
         font-size: 16px;
+    }
+
+    #project-highlights-button {
+        height: 100px;
+        width: 325px;
+        margin: 0 auto 15px auto;
+    }
+
+    #project-highlights-button button {
+        height: 100%;
+        width: 100%;
     }
 }
 /*#endregion*/
