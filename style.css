@@ -184,19 +184,19 @@ header .logo-container h1 {
 .home-page-banner-content .small-text h1 {
     font-size: 50px;
     display: block;
-    font-family: HindSemiBold;
+    font-family: HindSemiBold, sans-serif;
 }
 
 .home-page-banner-content .large-text h1 {
     font-size: 50px;
-    font-family: HindSemiBold;
+    font-family: HindSemiBold, sans-serif;
     display: none;
 }
 
 .home-page-banner-content .sub-title p {
     display: block;
     font-size: 20px;
-    font-family: HindLight;
+    font-family: HindLight, sans-serif;
     margin-top: 25px;
 }
 
@@ -209,7 +209,7 @@ header .logo-container h1 {
     width: 250px;
     height: 100px;
     font-size: 36px;
-    font-family: HindSemiBold;
+    font-family: HindSemiBold, sans-serif;
     position: absolute;
     top: 350px;
     border: 5px solid white;
@@ -217,10 +217,11 @@ header .logo-container h1 {
     color: black;
     cursor: pointer;
     transition: 0.25s;
+    backdrop-filter: blur(2px);
 }
 
 .home-page-banner-button:hover button {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.375);
     color: White;
 }
 /*#endregion*/
@@ -238,7 +239,7 @@ header .logo-container h1 {
 
 #learn h1,
 #web-design h1 {
-    font-family: HindLight;
+    font-family: HindLight, sans-serif;
     text-align: left;
     font-size: 27.5px;
     letter-spacing: 1px;
@@ -247,7 +248,7 @@ header .logo-container h1 {
 
 #learn h2,
 #web-design h2 {
-    font-family: HindBold;
+    font-family: HindBold, sans-serif;
     text-align: left;
     font-size: 27.5px;
     letter-spacing: 1px;
@@ -256,7 +257,7 @@ header .logo-container h1 {
 
 #learn p,
 #web-design p {
-    font-family: HindRegular;
+    font-family: HindRegular, sans-serif;
     text-align: left;
     font-size: 20px;
     margin-top: 50px;
@@ -289,12 +290,12 @@ header .logo-container h1 {
 }
 
 .main-content-container .main-content-button button {
-    width: 225px;
-    height: 75px;
-    top: 500px;
-    font-size: 24px;
+    width: 300px;
+    height: 100px;
+    top: 475px;
+    font-size: 28px;
     border: none;
-    font-family: HindRegular;
+    font-family: HindRegular, sans-serif;
     margin: 0 auto;
     position: absolute;
     transition: 0.25s;
@@ -383,7 +384,7 @@ header .logo-container h1 {
 
 .project .project-header h3 {
     font-size: 37.5px;
-    font-family: HindSemiBold;
+    font-family: HindSemiBold, sans-serif;
     color: white;
     text-align: left;
     width: 100%;
@@ -405,7 +406,7 @@ header .logo-container h1 {
 
 .project .project-information p {
     font-size: 22px;
-    font-family: HindRegular;
+    font-family: HindRegular, sans-serif;
     color: white;
     padding: 30px 12.5% 0 15px;
 }
@@ -427,7 +428,7 @@ header .logo-container h1 {
     color: white;
     background-color: black;
     font-size: 32.5px;
-    font-family: HindLight;
+    font-family: HindLight, sans-serif;
     transition: 0.25s;
     cursor: pointer;
 }
@@ -447,6 +448,43 @@ header .logo-container h1 {
 /*#endregion*/
 
 /*#region Footer*/
+footer {
+    background-color: black;
+    height: 250px;
+    padding: 30px 0 0 15px;
+    column-count: 2;
+    column-fill: auto;
+}
+
+.footer-nav-links {
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-size: 24px;
+}
+
+.footer-nav-links li {
+    list-style: none;
+}
+
+.footer-nav-links a {
+    color: white;
+    font-family: HindRegular, sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.25s;
+    line-height: 37.5px;
+}
+
+.footer-sub-nav-links {
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.footer-sub-nav-links a {
+    font-family: HindLight, sans-serif;
+    line-height: 25px;
+}
 /*#endregion*/
 
 /*#region Media Queries*/
@@ -491,7 +529,7 @@ header .logo-container h1 {
     .main-content-container .main-content-button button {
         width: 300px;
         height: 100px;
-        top: 450px;
+        top: 425px;
         font-size: 28px;
     }
 
@@ -507,6 +545,10 @@ header .logo-container h1 {
     .project .project-information p {
         font-size: 22px;
         padding: 30px 12.5% 0 75px;
+    }
+
+    footer {
+        padding: 30px 0 0 75px;
     }
 }
 /*#endregion*/
@@ -563,7 +605,7 @@ header .logo-container h1 {
     }
 
     .home-page-banner-button button {
-        width: 300px;
+        width: 312.5px;
         height: 125px;
         font-size: 42px;
     }
@@ -580,13 +622,12 @@ header .logo-container h1 {
     .main-content-container .main-content-button {
         position: absolute;
         display: block;
-        bottom: 625px;
+        bottom: 600px;
     }
 
     .main-content-container .main-content-button button {
         width: 275px;
         height: 100px;
-        bottom: 750px;
         font-size: 30px;
     }
 
@@ -629,7 +670,7 @@ header .logo-container h1 {
     #learn .main-content-image,
     #web-design .main-content-image {
         position: relative;
-        width: 175px;
+        width: 200px;
         height: 100%;
         z-index: 9999;
     }
@@ -694,6 +735,10 @@ header .logo-container h1 {
         height: 100%;
         width: 100%;
     }
+
+    footer {
+        padding: 30px 0 0 15%;
+    }
 }
 /*#endregion*/
 
@@ -753,12 +798,20 @@ header .logo-container h1 {
         height: 100%;
         width: 100%;
     }
+
+    footer {
+        padding: 30px 0 0 25%;
+    }
 }
 /*#endregion*/
 
 /*#region Extra Large Devices*/
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    #learn .main-content-image,
+    #web-design .main-content-image {
+        width: 350px;
+    }
 }
 /*#endregion*/
 
