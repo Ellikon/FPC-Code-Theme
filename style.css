@@ -452,15 +452,14 @@ footer {
     background-color: black;
     height: 250px;
     padding: 30px 0 0 15px;
-    column-count: 2;
-    column-fill: auto;
 }
 
 .footer-nav-links {
-    display: block;
+    display: flex;
     text-align: left;
     width: 100%;
     font-size: 24px;
+    align-items: center;
 }
 
 .footer-nav-links li {
@@ -474,6 +473,8 @@ footer {
     letter-spacing: 1px;
     transition: 0.25s;
     line-height: 37.5px;
+    margin: 0 12.5px;
+    border-right: solid 1px white;
 }
 
 .footer-sub-nav-links {
