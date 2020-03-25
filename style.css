@@ -5,486 +5,494 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 *:focus {
-    outline: none !important;
+	outline: none !important;
 }
 
 html,
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-        "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 0px;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    color: white;
-    background: white;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    vertical-align: baseline;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 0px;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+	color: white;
+	background: white;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	vertical-align: baseline;
 }
 /*#endregion*/
 
 /*#region Menu*/
 header {
-    font-family: HindLight, sans-serif;
-    width: 100%;
-    height: 75px;
-    margin: auto;
-    position: absolute;
-    display: flex;
-    top: 25px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
+	font-family: HindLight, sans-serif;
+	width: 100%;
+	height: 75px;
+	margin: auto;
+	position: absolute;
+	display: flex;
+	top: 25px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
 }
 
 nav {
-    display: flex;
-    width: calc(100vw - 2 * 15px);
-    margin: auto;
-    height: 100%;
+	display: flex;
+	width: calc(100vw - 2 * 15px);
+	margin: auto;
+	height: 100%;
 }
 
 header .logo-container {
-    margin: auto auto auto 0;
-    z-index: 9999;
+	margin: auto auto auto 0;
+	z-index: 9999;
 }
 
 header .logo-container h1 {
-    font-size: 24px;
-    color: white;
+	font-size: 24px;
+	color: white;
 }
 
 .nav-links {
-    position: absolute;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    top: 12.5px;
-    background: rgba(0, 0, 0, 0.95);
-    display: block;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    transform: translateY(-100%);
-    transition: transform 0.25s ease-in;
-    backdrop-filter: brightness(50%) blur(2.5px);
-    padding-top: 75px;
-    font-size: 24px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 100vh;
+	top: 12.5px;
+	background: rgba(0, 0, 0, 0.95);
+	display: block;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+	transform: translateY(-100%);
+	transition: transform 0.25s ease-in;
+	backdrop-filter: brightness(50%) blur(2.5px);
+	padding-top: 75px;
+	font-size: 24px;
 }
 
 .nav-links li {
-    opacity: 0;
-    margin: 50px 0;
+	opacity: 0;
+	margin: 50px 0;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1.5px;
-    transition: 0.25s;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+	transition: 0.25s;
 }
 
 .nav-links li:hover a {
-    color: gray;
+	color: gray;
 }
 
 .nav-active {
-    transform: translateY(0%);
+	transform: translateY(0%);
 }
 
 .burger {
-    display: inline-block;
-    flex: 1;
-    margin-right: 10px;
-    cursor: pointer;
-    clear: right;
-    position: absolute;
-    top: 25px;
-    right: 0;
+	display: inline-block;
+	flex: 1;
+	margin-right: 10px;
+	cursor: pointer;
+	clear: right;
+	position: absolute;
+	top: 25px;
+	right: 0;
 }
 
 .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    transition: all 0.25s ease;
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	transition: all 0.25s ease;
 }
 
 .line2 {
-    margin: 5px 0;
+	margin: 5px 0;
 }
 
 .overlay {
-    position: absolute;
-    filter: blur(8px);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+	position: absolute;
+	filter: blur(8px);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+	transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
-    opacity: 0;
+	opacity: 0;
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+	transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateY(-25px);
-    }
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
 
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 /*#endregion*/
 
 /*#region Home Page Banner*/
 .home-page-banner {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+	width: 100%;
+	height: 100vh;
+	position: relative;
 }
 
 .home-page-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 0px;
-    padding: 0px;
-    filter: brightness(75%);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	margin: 0px;
+	padding: 0px;
+	filter: brightness(75%);
 }
 
 .home-page-banner-content {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .home-page-banner-content .small-text h1 {
-    font-size: 50px;
-    display: block;
-    font-family: HindSemiBold, sans-serif;
+	font-size: 50px;
+	display: block;
+	font-family: HindSemiBold, sans-serif;
 }
 
 .home-page-banner-content .large-text h1 {
-    font-size: 50px;
-    font-family: HindSemiBold, sans-serif;
-    display: none;
+	font-size: 50px;
+	font-family: HindSemiBold, sans-serif;
+	display: none;
 }
 
 .home-page-banner-content .sub-title p {
-    display: block;
-    font-size: 20px;
-    font-family: HindLight, sans-serif;
-    margin-top: 25px;
+	display: block;
+	font-size: 20px;
+	font-family: HindLight, sans-serif;
+	margin-top: 25px;
 }
 
 .home-page-banner-button {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .home-page-banner-button button {
-    width: 250px;
-    height: 100px;
-    font-size: 36px;
-    font-family: HindSemiBold, sans-serif;
-    position: absolute;
-    top: 350px;
-    border: 5px solid white;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    transition: 0.25s;
-    backdrop-filter: blur(2px);
+	width: 250px;
+	height: 100px;
+	font-size: 36px;
+	font-family: HindSemiBold, sans-serif;
+	position: absolute;
+	top: 350px;
+	border: 5px solid white;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	transition: 0.25s;
+	backdrop-filter: blur(2px);
 }
 
 .home-page-banner-button:hover button {
-    background-color: rgba(0, 0, 0, 0.375);
-    color: White;
+	background-color: rgba(0, 0, 0, 0.375);
+	color: White;
 }
 /*#endregion*/
 
 /*#region Page Content*/
 .main-content-container {
-    height: 1375px;
-    position: relative;
+	height: 1375px;
+	position: relative;
 }
 
 .main-content-container .main-content {
-    margin: 0 15px;
-    padding-top: 15px;
+	margin: 0 15px;
+	padding-top: 15px;
 }
 
 #learn h1,
 #web-design h1 {
-    font-family: HindLight, sans-serif;
-    text-align: left;
-    font-size: 27.5px;
-    letter-spacing: 1px;
-    width: 100%;
+	font-family: HindLight, sans-serif;
+	text-align: left;
+	font-size: 27.5px;
+	letter-spacing: 1px;
+	width: 100%;
 }
 
 #learn h2,
 #web-design h2 {
-    font-family: HindBold, sans-serif;
-    text-align: left;
-    font-size: 27.5px;
-    letter-spacing: 1px;
-    width: 100%;
+	font-family: HindBold, sans-serif;
+	text-align: left;
+	font-size: 27.5px;
+	letter-spacing: 1px;
+	width: 100%;
 }
 
 #learn p,
 #web-design p {
-    font-family: HindRegular, sans-serif;
-    text-align: left;
-    font-size: 20px;
-    margin-top: 50px;
-    width: 75%;
+	font-family: HindRegular, sans-serif;
+	text-align: left;
+	font-size: 20px;
+	margin-top: 50px;
+	width: 75%;
 }
 
 #learn {
-    background-color: black;
+	background-color: black;
 }
 
 #learn h1,
 #learn h2,
 #learn p {
-    color: white;
+	color: white;
 }
 
 #web-design {
-    background-color: white;
+	background-color: white;
 }
 
 #web-design h1,
 #web-design h2,
 #web-design p {
-    color: black;
+	color: black;
 }
 
 .main-content-button {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .main-content-container .main-content-button button {
-    width: 300px;
-    height: 100px;
-    top: 475px;
-    font-size: 28px;
-    border: none;
-    font-family: HindRegular, sans-serif;
-    margin: 0 auto;
-    position: absolute;
-    transition: 0.25s;
-    cursor: pointer;
+	width: 300px;
+	height: 100px;
+	top: 475px;
+	font-size: 28px;
+	border: none;
+	font-family: HindRegular, sans-serif;
+	margin: 0 auto;
+	position: absolute;
+	transition: 0.25s;
+	cursor: pointer;
 }
 
 #learn button {
-    border: 2.5px solid white;
-    background-color: white;
-    color: black;
+	border: 2.5px solid white;
+	background-color: white;
+	color: black;
 }
 
 #learn .main-content-button:hover button {
-    background-color: transparent;
-    color: white;
+	background-color: transparent;
+	color: white;
 }
 
 #web-design button {
-    border: 2.5px solid black;
-    background-color: black;
-    color: white;
+	border: 2.5px solid black;
+	background-color: black;
+	color: white;
 }
 
 #web-design .main-content-button:hover button {
-    background-color: transparent;
-    color: black;
+	background-color: transparent;
+	color: black;
 }
 
 .main-content-container .main-content-image {
-    bottom: 0;
-    position: absolute;
+	bottom: 0;
+	position: absolute;
 }
 
 .main-content-container .main-content-image {
-    height: 750px;
-    width: 100%;
+	height: 750px;
+	width: 100%;
 }
 
 .main-content-container .main-content-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 /*#endregion*/
 
 /*#region Project Highlights*/
 #project-highlights #project-highlights-header {
-    background-color: black;
-    height: 125px;
+	background-color: black;
+	height: 125px;
 }
 
 #project-highlights h1 {
-    font-size: 50px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 125px;
+	font-size: 50px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 125px;
 }
 
 #projects {
-    display: block;
-    margin: 15px;
+	display: block;
+	margin: 15px;
 }
 
 .project {
-    width: 100%;
-    height: 375px;
-    background-color: black;
-    position: relative;
+	width: 100%;
+	height: 375px;
+	background-color: black;
+	position: relative;
 }
 
 .project img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .project .project-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 75px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9375);
-    transition: 0.25s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 75px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9375);
+	transition: 0.25s;
 }
 
 .project .project-header h3 {
-    font-size: 37.5px;
-    font-family: HindSemiBold, sans-serif;
-    color: white;
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    letter-spacing: 1px;
-    line-height: 1.25;
-    padding: 0 25% 0 15px;
-    vertical-align: middle;
-    line-height: 75px;
+	font-size: 37.5px;
+	font-family: HindSemiBold, sans-serif;
+	color: white;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	letter-spacing: 1px;
+	line-height: 1.25;
+	padding: 0 25% 0 15px;
+	vertical-align: middle;
+	line-height: 75px;
 }
 
 .project .project-information {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    opacity: 0;
-    transition: 0.25s;
+	position: absolute;
+	top: 90px;
+	left: 0;
+	opacity: 0;
+	transition: 0.25s;
 }
 
 .project .project-information p {
-    font-size: 22px;
-    font-family: HindRegular, sans-serif;
-    color: white;
-    padding: 30px 12.5% 0 15px;
+	font-size: 22px;
+	font-family: HindRegular, sans-serif;
+	color: white;
+	padding: 30px 12.5% 0 15px;
 }
 
 #project-2 {
-    margin: 15px 0;
+	margin: 15px 0;
 }
 
 #project-highlights-button {
-    height: 100px;
-    width: calc(100% - 15px * 2);
-    margin: 0 auto 15px auto;
+	height: 100px;
+	width: calc(100% - 15px * 2);
+	margin: 0 auto 15px auto;
 }
 
 #project-highlights-button button {
-    height: 100%;
-    width: 100%;
-    border: 2.5px black solid;
-    color: white;
-    background-color: black;
-    font-size: 32.5px;
-    font-family: HindLight, sans-serif;
-    transition: 0.25s;
-    cursor: pointer;
+	height: 100%;
+	width: 100%;
+	border: 2.5px black solid;
+	color: white;
+	background-color: black;
+	font-size: 32.5px;
+	font-family: HindLight, sans-serif;
+	transition: 0.25s;
+	cursor: pointer;
 }
 
 .project:hover .project-header {
-    height: 100%;
+	height: 100%;
 }
 
 .project:hover .project-information {
-    opacity: 100%;
+	opacity: 100%;
 }
 
 #project-highlights-button:hover button {
-    background-color: white;
-    color: black;
+	background-color: white;
+	color: black;
 }
 /*#endregion*/
 
 /*#region Footer*/
 footer {
-    background-color: black;
-    height: 250px;
-    padding: 30px 0 0 15px;
+	background-color: black;
+	height: 250px;
+	padding: 30px 0 0 0;
 }
 
 .footer-nav-links {
-    display: flex;
-    text-align: left;
-    width: 100%;
-    font-size: 24px;
-    align-items: center;
+	display: flex;
+	flex: 1;
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	align-items: center;
+	background-color: red;
 }
 
 .footer-nav-links li {
-    list-style: none;
+	list-style: none;
+	text-align: center;
 }
 
 .footer-nav-links a {
-    color: white;
-    font-family: HindRegular, sans-serif;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: 0.25s;
-    line-height: 37.5px;
-    margin: 0 12.5px;
-    border-right: solid 1px white;
+	color: white;
+	font-family: HindRegular, sans-serif;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: 0.25s;
+	line-height: 37.5px;
+	text-align: center;
+}
+
+.footer-nav-links-divider {
+	width: 1px;
+	height: 16px;
+	margin: 0 12.5px;
+	background-color: white;
 }
 
 .footer-sub-nav-links {
-    font-size: 18px;
-    padding-left: 15px;
+	font-size: 18px;
 }
 
 .footer-sub-nav-links a {
-    font-family: HindLight, sans-serif;
-    line-height: 25px;
+	font-family: HindLight, sans-serif;
+	line-height: 25px;
 }
 /*#endregion*/
 
@@ -498,355 +506,346 @@ footer {
 /*#region Small Devices*/
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    nav {
-        width: calc(100vw - 2 * 75px);
-    }
+	nav {
+		width: calc(100vw - 2 * 75px);
+	}
 
-    .burger {
-        right: 60px;
-    }
+	.burger {
+		right: 60px;
+	}
 
-    .main-content-container {
-        height: 1375px;
-    }
+	.main-content-container {
+		height: 1375px;
+	}
 
-    .main-content-container .main-content {
-        margin: 0 75px;
-        padding-top: 25px;
-    }
+	.main-content-container .main-content {
+		margin: 0 75px;
+		padding-top: 25px;
+	}
 
-    #learn h1,
-    #learn h2,
-    #web-design h1,
-    #web-design h2 {
-        font-size: 24px;
-    }
+	#learn h1,
+	#learn h2,
+	#web-design h1,
+	#web-design h2 {
+		font-size: 24px;
+	}
 
-    #learn p,
-    #web-design p {
-        font-size: 20px;
-    }
+	#learn p,
+	#web-design p {
+		font-size: 20px;
+	}
 
-    .main-content-container .main-content-button button {
-        width: 300px;
-        height: 100px;
-        top: 425px;
-        font-size: 28px;
-    }
+	.main-content-container .main-content-button button {
+		width: 300px;
+		height: 100px;
+		top: 425px;
+		font-size: 28px;
+	}
 
-    .main-content-container .main-content-image {
-        height: 800px;
-    }
+	.main-content-container .main-content-image {
+		height: 800px;
+	}
 
-    .project .project-header h3 {
-        font-size: 35px;
-        padding: 0 12.5% 0 75px;
-    }
+	.project .project-header h3 {
+		font-size: 35px;
+		padding: 0 12.5% 0 75px;
+	}
 
-    .project .project-information p {
-        font-size: 22px;
-        padding: 30px 12.5% 0 75px;
-    }
+	.project .project-information p {
+		font-size: 22px;
+		padding: 30px 12.5% 0 75px;
+	}
 
-    footer {
-        padding: 30px 0 0 75px;
-    }
+	footer {
+		padding: 30px 0 0 75px;
+	}
 }
 /*#endregion*/
 
 /*#region Medium Devices*/
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    nav {
-        width: calc(100vw - 2 * 15%);
-    }
+	nav {
+		width: calc(100vw - 2 * 15%);
+	}
 
-    nav .nav-links {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        font-size: 18px;
-        width: 75%;
-        height: 100%;
-        list-style: none;
-        letter-spacing: 1.25px;
-        background: none;
-        backdrop-filter: none;
-        transform: translateX(0%);
-        padding: 0;
-        margin: 0;
-        top: 0;
-    }
+	nav .nav-links {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		font-size: 18px;
+		width: 75%;
+		height: 100%;
+		list-style: none;
+		letter-spacing: 1.25px;
+		background: none;
+		backdrop-filter: none;
+		transform: translateX(0%);
+		padding: 0;
+		margin: 0;
+		top: 0;
+	}
 
-    .nav-links li {
-        list-style: none;
-        margin: auto 0 auto 20px;
-        opacity: 1;
-        vertical-align: middle;
-    }
+	.nav-links li {
+		list-style: none;
+		margin: auto 0 auto 20px;
+		opacity: 1;
+		vertical-align: middle;
+	}
 
-    .burger {
-        display: none;
-    }
+	.burger {
+		display: none;
+	}
 
-    .home-page-banner-content {
-        padding: 0 15%;
-    }
+	.home-page-banner-content {
+		padding: 0 15%;
+	}
 
-    .home-page-banner-content .small-text h1 {
-        display: none;
-    }
+	.home-page-banner-content .small-text h1 {
+		display: none;
+	}
 
-    .home-page-banner-content .large-text h1 {
-        display: block;
-    }
+	.home-page-banner-content .large-text h1 {
+		display: block;
+	}
 
-    .home-page-banner-content .sub-title p {
-        font-size: 24px;
-    }
+	.home-page-banner-content .sub-title p {
+		font-size: 24px;
+	}
 
-    .home-page-banner-button button {
-        width: 312.5px;
-        height: 125px;
-        font-size: 42px;
-    }
+	.home-page-banner-button button {
+		width: 312.5px;
+		height: 125px;
+		font-size: 42px;
+	}
 
-    .main-content-container {
-        height: 625px;
-    }
+	.main-content-container {
+		height: 625px;
+	}
 
-    .main-content-container .main-content {
-        margin: 0 15%;
-        padding-top: 0px;
-    }
+	.main-content-container .main-content {
+		margin: 0 15%;
+		padding-top: 0px;
+	}
 
-    .main-content-container .main-content-button {
-        position: absolute;
-        display: block;
-        bottom: 600px;
-    }
+	.main-content-container .main-content-button {
+		position: absolute;
+		display: block;
+		bottom: 600px;
+	}
 
-    .main-content-container .main-content-button button {
-        width: 275px;
-        height: 100px;
-        font-size: 30px;
-    }
+	.main-content-container .main-content-button button {
+		width: 275px;
+		height: 100px;
+		font-size: 30px;
+	}
 
-    .main-content-container .main-content-text {
-        display: block;
-        padding-top: 37.5px;
-        width: 75%;
-    }
+	.main-content-container .main-content-text {
+		display: block;
+		padding-top: 37.5px;
+		width: 75%;
+	}
 
-    #learn h1,
-    #learn h2,
-    #web-design h1,
-    #web-design h2 {
-        font-size: 26px;
-        width: 100%;
-    }
+	#learn h1,
+	#learn h2,
+	#web-design h1,
+	#web-design h2 {
+		font-size: 26px;
+		width: 100%;
+	}
 
-    #learn p,
-    #web-design p {
-        width: 100%;
-    }
+	#learn p,
+	#web-design p {
+		width: 100%;
+	}
 
-    #learn .main-content p,
-    #learn .main-content-text,
-    #learn .main-content-text * {
-        text-align: left;
-        float: left;
-    }
+	#learn .main-content p,
+	#learn .main-content-text,
+	#learn .main-content-text * {
+		text-align: left;
+		float: left;
+	}
 
-    .main-content-text {
-        overflow: hidden;
-    }
+	.main-content-text {
+		overflow: hidden;
+	}
 
-    #learn .main-content-button {
-        left: 0;
-        margin-left: 15%;
-        z-index: 9999;
-    }
+	#learn .main-content-button {
+		left: 0;
+		margin-left: 15%;
+		z-index: 9999;
+	}
 
-    #learn .main-content-image,
-    #web-design .main-content-image {
-        position: relative;
-        width: 200px;
-        height: 100%;
-        z-index: 9999;
-    }
+	#learn .main-content-image,
+	#web-design .main-content-image {
+		position: relative;
+		width: 25%;
+		height: 100%;
+		z-index: 9999;
+	}
 
-    #learn .main-content-image {
-        float: right;
-    }
+	#learn .main-content-image {
+		float: right;
+	}
 
-    #web-design .main-content p,
-    #web-design .main-content-text,
-    #web-design .main-content-text * {
-        text-align: right;
-        float: right;
-    }
+	#web-design .main-content p,
+	#web-design .main-content-text,
+	#web-design .main-content-text * {
+		text-align: right;
+		float: right;
+	}
 
-    #web-design .main-content-button {
-        right: 275px;
-        margin-right: 15%;
-    }
+	#web-design .main-content-button {
+		right: 275px;
+		margin-right: 15%;
+	}
 
-    #web-design .main-content-image {
-        float: left;
-    }
+	#web-design .main-content-image {
+		float: left;
+	}
 
-    #projects {
-        display: block;
-        margin: 15px 30%;
-    }
+	#projects {
+		display: block;
+		margin: 15px 30%;
+	}
 
-    .project {
-        width: 100%;
-        margin: 0;
-        height: 250px;
-    }
+	.project {
+		width: 100%;
+		margin: 0;
+		height: 250px;
+	}
 
-    .project .project-header {
-        height: 50px;
-    }
+	.project .project-header {
+		height: 50px;
+	}
 
-    .project .project-header h3 {
-        font-size: 22.5px;
-        padding: 0 6.25% 0 15px;
-        line-height: 50px;
-    }
+	.project .project-header h3 {
+		font-size: 22.5px;
+		padding: 0 6.25% 0 15px;
+		line-height: 50px;
+	}
 
-    .project .project-information {
-        top: 65px;
-    }
+	.project .project-information {
+		top: 65px;
+	}
 
-    .project .project-information p {
-        font-size: 16px;
-        padding: 0 12.5% 0 15px;
-    }
+	.project .project-information p {
+		font-size: 16px;
+		padding: 0 12.5% 0 15px;
+	}
 
-    #project-highlights-button {
-        height: 100px;
-        width: 40%;
-        margin: 0 auto 15px auto;
-    }
+	#project-highlights-button {
+		height: 100px;
+		width: 40%;
+		margin: 0 auto 15px auto;
+	}
 
-    #project-highlights-button button {
-        height: 100%;
-        width: 100%;
-    }
+	#project-highlights-button button {
+		height: 100%;
+		width: 100%;
+	}
 
-    footer {
-        padding: 30px 0 0 15%;
-    }
+	footer {
+		padding: 30px 0 0 15%;
+	}
 }
 /*#endregion*/
 
 /*#region Large Devices*/
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    nav {
-        width: calc(100vw - 2 * 25%);
-    }
+	nav {
+		width: calc(100vw - 2 * 25%);
+	}
 
-    .home-page-banner-content .large-text h1 {
-        font-size: 60px;
-    }
+	.home-page-banner-content .large-text h1 {
+		font-size: 60px;
+	}
 
-    .main-content-container .main-content {
-        margin: 0 25%;
-    }
+	.main-content-container .main-content {
+		margin: 0 25%;
+	}
 
-    #learn .main-content-button {
-        left: 0;
-        margin-left: 25%;
-    }
+	#learn .main-content-button {
+		left: 0;
+		margin-left: 25%;
+	}
 
-    #web-design .main-content-button {
-        margin-right: 25%;
-    }
+	#web-design .main-content-button {
+		margin-right: 25%;
+	}
 
-    #learn .main-content-image,
-    #web-design .main-content-image {
-        width: 275px;
-    }
+	#projects {
+		display: flex;
+		margin: 30px 12.5%;
+	}
 
-    #projects {
-        display: flex;
-        margin: 15px 12.5%;
-    }
+	#project-2 {
+		margin: 0 15px;
+	}
 
-    #project-2 {
-        margin: 0 15px;
-    }
+	.project .project-header h3 {
+		font-size: 25px;
+	}
 
-    .project .project-header h3 {
-        font-size: 25px;
-    }
+	.project .project-information p {
+		font-size: 16px;
+	}
 
-    .project .project-information p {
-        font-size: 16px;
-    }
+	#project-highlights-button {
+		height: 100px;
+		width: 325px;
+		margin: 0 auto 30px auto;
+	}
 
-    #project-highlights-button {
-        height: 100px;
-        width: 325px;
-        margin: 0 auto 15px auto;
-    }
+	#project-highlights-button button {
+		height: 100%;
+		width: 100%;
+	}
 
-    #project-highlights-button button {
-        height: 100%;
-        width: 100%;
-    }
-
-    footer {
-        padding: 30px 0 0 25%;
-    }
+	footer {
+		padding: 30px 0 0 25%;
+	}
 }
 /*#endregion*/
 
 /*#region Extra Large Devices*/
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    #learn .main-content-image,
-    #web-design .main-content-image {
-        width: 350px;
-    }
 }
 /*#endregion*/
 
 @media only screen and (max-height: 600px) {
-    .home-page-banner {
-        height: 600px;
-    }
+	.home-page-banner {
+		height: 600px;
+	}
 
-    @media only screen and (max-width: 768px) {
-        .nav-links {
-            height: 600px;
-        }
-    }
+	@media only screen and (max-width: 768px) {
+		.nav-links {
+			height: 600px;
+		}
+	}
 }
 /*#endregion*/
 
 /*#region Fonts */
 @font-face {
-    font-family: HindLight;
-    src: url("/fonts/Hind-Light.ttf");
+	font-family: HindLight;
+	src: url("/fonts/Hind-Light.ttf");
 }
 
 @font-face {
-    font-family: HindRegular;
-    src: url("/fonts/Hind-Regular.ttf");
+	font-family: HindRegular;
+	src: url("/fonts/Hind-Regular.ttf");
 }
 
 @font-face {
-    font-family: HindBold;
-    src: url("/fonts/Hind-Bold.ttf");
+	font-family: HindBold;
+	src: url("/fonts/Hind-Bold.ttf");
 }
 
 @font-face {
-    font-family: HindSemiBold;
-    src: url("/fonts/Hind-SemiBold.ttf");
+	font-family: HindSemiBold;
+	src: url("/fonts/Hind-SemiBold.ttf");
 }
 /*#endregion*/
