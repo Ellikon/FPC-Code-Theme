@@ -450,7 +450,7 @@ header .logo-container h1 {
 /*#region Footer*/
 footer {
 	background-color: black;
-	height: 275px;
+	height: 312.5px;
 	padding: 30px 0 0 0;
 	font-family: HindLight, sans-serif;
 	position: relative;
@@ -519,6 +519,30 @@ footer .footer-nav-links {
 	height: 50px;
 	margin: 0 15px;
 }
+
+footer .copyright {
+	font-size: 14px;
+	font-family: HindLight, sans-serif;
+	position: absolute;
+	bottom: 5px;
+	letter-spacing: 0.75px;
+	width: calc(100% - 2 * 15px);
+	margin: 0 15px;
+	display: flex;
+	flex: 1;
+}
+
+footer .copyright .title {
+	display: flex;
+	position: relative;
+}
+
+footer .copyright .copyright-statement {
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	flex: 1;
+}
 /*#endregion*/
 
 /*#region Media Queries*/
@@ -579,6 +603,11 @@ footer .footer-nav-links {
 	.project .project-information p {
 		font-size: 22px;
 		padding: 30px 12.5% 0 75px;
+	}
+
+	footer .copyright {
+		width: calc(100% - 2 * 75px);
+		margin: 0 75px;
 	}
 }
 /*#endregion*/
@@ -765,6 +794,11 @@ footer .footer-nav-links {
 		height: 100%;
 		width: 100%;
 	}
+
+	footer .copyright {
+		width: calc(100% - 2 * 15%);
+		margin: 0 15%;
+	}
 }
 /*#endregion*/
 
@@ -818,6 +852,11 @@ footer .footer-nav-links {
 	#project-highlights-button button {
 		height: 100%;
 		width: 100%;
+	}
+
+	footer .copyright {
+		width: calc(100% - 2 * 25%);
+		margin: 0 25%;
 	}
 }
 /*#endregion*/
