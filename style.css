@@ -549,6 +549,80 @@ footer .copyright .copyright-statement {
 /*#region Extra Small Devices*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.main-content-container {
+		height: 1400px;
+	}
+
+	#learn h1,
+	#web-design h1 {
+		font-size: 21.25px;
+	}
+
+	#learn h2,
+	#web-design h2 {
+		font-size: 21.25px;
+	}
+
+	#learn p,
+	#web-design p {
+		font-family: HindRegular, sans-serif;
+		text-align: left;
+		font-size: 18.75px;
+		margin-top: 50px;
+		width: 87.5%;
+	}
+
+	.main-content-container .main-content-button button {
+		width: 300px;
+		height: 100px;
+		top: 500px;
+		font-size: 28px;
+		border: none;
+		font-family: HindRegular, sans-serif;
+		margin: 0 auto;
+		position: absolute;
+		transition: 0.25s;
+		cursor: pointer;
+	}
+
+	.project .project-header h3 {
+		font-size: 27.5px;
+		padding: 0 5% 0 15px;
+	}
+
+	.project .project-information p {
+		font-size: 20px;
+	}
+
+	footer {
+		background-color: black;
+		height: 525px;
+		padding: 30px 0 0 0;
+		font-family: HindLight, sans-serif;
+		position: relative;
+	}
+
+	footer .footer-nav-links {
+		display: block;
+		font-size: 18px;
+		list-style: none;
+		letter-spacing: 1.25px;
+		justify-content: center;
+		align-items: center;
+		margin-top: 105px;
+	}
+
+	.footer-nav-links li {
+		text-align: center;
+		justify-content: center;
+	}
+
+	.footer-nav-links-divider {
+		height: 1px;
+		width: 75px;
+		background-color: white;
+		margin: 12.5px auto;
+	}
 }
 /*#endregion*/
 
