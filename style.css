@@ -343,7 +343,7 @@ header .logo-container h1 {
 
 /*#region Project Highlights*/
 #project-highlights {
-	background-image: url("project_highlights_background.jpeg");
+	background-image: url("project_highlights_background.jpg");
 	background-repeat: repeat-y;
 	background-size: 100%;
 }
@@ -370,6 +370,7 @@ header .logo-container h1 {
 	height: 375px;
 	background-color: black;
 	position: relative;
+	box-shadow: 0px 6px 10px black;
 }
 
 .project img {
@@ -426,12 +427,13 @@ header .logo-container h1 {
 	width: calc(100% - 15px * 2);
 	margin: 0 auto 0 auto;
 	padding-bottom: 15px;
+	backdrop-filter: blur(2px);
 }
 
 #project-highlights-button button {
 	height: 100%;
 	width: 100%;
-	border: 2.5px black solid;
+	border: 3.75px black solid;
 	color: white;
 	background-color: black;
 	font-size: 32.5px;
@@ -449,7 +451,7 @@ header .logo-container h1 {
 }
 
 #project-highlights-button:hover button {
-	background-color: transparent;
+	background: rgba(255, 255, 255, 0.125);
 	color: black;
 }
 /*#endregion*/
@@ -674,6 +676,10 @@ footer .copyright .copyright-statement {
 
 	.main-content-container .main-content-image {
 		height: 800px;
+	}
+
+	.project {
+		box-shadow: 0px 6px 10px black;
 	}
 
 	.project .project-header h3 {
@@ -914,6 +920,10 @@ footer .copyright .copyright-statement {
 
 	#project-2 {
 		margin: 0 15px;
+	}
+
+	.project {
+		box-shadow: 6px 6px 10px black;
 	}
 
 	.project .project-header h3 {
