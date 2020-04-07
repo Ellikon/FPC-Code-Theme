@@ -342,6 +342,12 @@ header .logo-container h1 {
 /*#endregion*/
 
 /*#region Project Highlights*/
+#project-highlights {
+	background-image: url("project_highlights_background.jpeg");
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
 #project-highlights #project-highlights-header {
 	background-color: black;
 	height: 125px;
@@ -418,7 +424,8 @@ header .logo-container h1 {
 #project-highlights-button {
 	height: 100px;
 	width: calc(100% - 15px * 2);
-	margin: 0 auto 15px auto;
+	margin: 0 auto 0 auto;
+	padding-bottom: 15px;
 }
 
 #project-highlights-button button {
@@ -428,7 +435,7 @@ header .logo-container h1 {
 	color: white;
 	background-color: black;
 	font-size: 32.5px;
-	font-family: HindLight, sans-serif;
+	font-family: HindSemiBold, sans-serif;
 	transition: 0.25s;
 	cursor: pointer;
 }
@@ -442,7 +449,7 @@ header .logo-container h1 {
 }
 
 #project-highlights-button:hover button {
-	background-color: white;
+	background-color: transparent;
 	color: black;
 }
 /*#endregion*/
@@ -861,7 +868,7 @@ footer .copyright .copyright-statement {
 	#project-highlights-button {
 		height: 100px;
 		width: 40%;
-		margin: 0 auto 15px auto;
+		margin: 0 auto 0 auto;
 	}
 
 	#project-highlights-button button {
@@ -918,9 +925,10 @@ footer .copyright .copyright-statement {
 	}
 
 	#project-highlights-button {
-		height: 100px;
+		height: 112.5px;
 		width: 325px;
-		margin: 0 auto 30px auto;
+		margin: 0 auto 0 auto;
+		padding-bottom: 30px;
 	}
 
 	#project-highlights-button button {
