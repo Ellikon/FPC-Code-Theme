@@ -385,7 +385,8 @@ header .logo-container h1 {
 	left: 0;
 	height: 75px;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.9375);
+	background-color: rgba(0, 0, 0, 0.975);
+	backdrop-filter: blur(4px);
 	transition: 0.25s;
 }
 
