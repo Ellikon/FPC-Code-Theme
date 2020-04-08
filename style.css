@@ -346,6 +346,7 @@ header .logo-container h1 {
 	background-image: url("project_highlights_background.jpg");
 	background-repeat: repeat-y;
 	background-size: 100%;
+	padding-bottom: 15px;
 }
 
 #project-highlights #project-highlights-header {
@@ -427,7 +428,6 @@ header .logo-container h1 {
 	height: 100px;
 	width: calc(100% - 15px * 2);
 	margin: 0 auto 0 auto;
-	padding-bottom: 15px;
 	backdrop-filter: blur(2px);
 }
 
@@ -460,7 +460,7 @@ header .logo-container h1 {
 /*#region Footer*/
 footer {
 	background-color: black;
-	height: 312.5px;
+	height: 325px;
 	padding: 30px 0 0 0;
 	font-family: HindLight, sans-serif;
 	position: relative;
@@ -522,7 +522,7 @@ footer .footer-nav-links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 30px;
+	margin-top: 45px;
 }
 
 .social-links img {
@@ -603,25 +603,58 @@ footer .copyright .copyright-statement {
 		position: relative;
 	}
 
+	.footer-main-content {
+		width: 60%;
+		margin: 0 20%;
+	}
+
 	footer .footer-nav-links {
 		display: block;
-		font-size: 18px;
+		font-size: 20px;
 		list-style: none;
 		letter-spacing: 1.25px;
 		justify-content: center;
 		align-items: center;
 		margin-top: 105px;
+		float: left;
+		width: 87.5px;
+		padding: 20px 0;
 	}
 
 	.footer-nav-links li {
 		text-align: center;
 		justify-content: center;
+		line-height: 20px;
 	}
 
 	.footer-nav-links-divider {
 		height: 1px;
-		width: 75px;
+		width: 75%;
 		background-color: white;
+		margin: 20px auto;
+	}
+
+	.social-links {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		margin-top: 105px;
+		padding: 12.5px 0;
+		width: 87.5px;
+		float: right;
+	}
+
+	.social-links img {
+		height: 35px;
+		margin: 0 auto;
+		display: flex;
+		justify-self: center;
+	}
+
+	.social-links-divider {
+		height: 1px;
+		width: 0;
+		background-color: black;
 		margin: 12.5px auto;
 	}
 }
@@ -905,6 +938,10 @@ footer .copyright .copyright-statement {
 		margin-right: 25%;
 	}
 
+	#project-highlights {
+		padding-bottom: 30px;
+	}
+
 	#projects {
 		display: flex;
 		margin: 30px 12.5%;
@@ -930,7 +967,6 @@ footer .copyright .copyright-statement {
 		height: 112.5px;
 		width: 325px;
 		margin: 0 auto 0 auto;
-		padding-bottom: 30px;
 	}
 
 	#project-highlights-button button {
