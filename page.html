@@ -7,27 +7,29 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<header>
-			<div class="header-background">
-				<nav>
-					<div class="logo-container">
-						<h1>FPC Code</h1>
-					</div>
-					<ul class="nav-links">
-						<li><a href="/" class="nav-link">Home</a></li>
-						<li><a href="page.html" class="nav-link">Join</a></li>
-						<li><a href="#" class="nav-link">Services</a></li>
-						<li><a href="#" class="nav-link">About</a></li>
-						<li><a href="#" class="nav-link">Contact</a></li>
-					</ul>
-					<div class="burger">
-						<div class="line1"></div>
-						<div class="line2"></div>
-						<div class="line3"></div>
-					</div>
-				</nav>
-			</div>
-		</header>
+		<div class="menu-container">
+			<header>
+				<div class="header-background">
+					<nav>
+						<div class="logo-container">
+							<h1>FPC Code</h1>
+						</div>
+						<ul class="nav-links">
+							<li><a href="/" class="nav-link">Home</a></li>
+							<li><a href="#" class="nav-link">Join</a></li>
+							<li><a href="#" class="nav-link">Services</a></li>
+							<li><a href="page.html" class="nav-link">About</a></li>
+							<li><a href="#" class="nav-link">Contact</a></li>
+						</ul>
+						<div class="burger">
+							<div class="line1"></div>
+							<div class="line2"></div>
+							<div class="line3"></div>
+						</div>
+					</nav>
+				</div>
+			</header>
+		</div>
 		<div class="page-banner">
 			<img src="join_banner.jpeg" alt="" />
 			<div class="page-banner-content">
@@ -44,8 +46,10 @@
 		</div>
 		<div class="content-container">
 			<div class="content">
-				<div class="content-text">
+				<div class="content-header">
 					<h1>Learn to Design and Develop</h1>
+				</div>
+				<div class="content-text">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Vulputate odio ut enim
@@ -56,5 +60,52 @@
 			</div>
 		</div>
 	</body>
+	<footer>
+		<div class="footer-button">
+			<button onclick="redirect('#')">Join</button>
+		</div>
+		<div class="footer-main-content">
+			<ul class="footer-nav-links">
+				<li><a href="/" class="footer-nav-link">Home</a></li>
+				<div class="footer-nav-links-divider"></div>
+				<li><a href="#" class="footer-nav-link">Join</a></li>
+				<div class="footer-nav-links-divider"></div>
+				<li><a href="#" class="footer-nav-link">Services</a></li>
+				<div class="footer-nav-links-divider"></div>
+				<li><a href="#" class="footer-nav-link">About</a></li>
+				<div class="footer-nav-links-divider"></div>
+				<li><a href="#" class="footer-nav-link">Contact</a></li>
+			</ul>
+			<ul class="social-links">
+				<li>
+					<a href="https://twitter.com/"><img src="twitter_icon.svg" alt="" /></a>
+				</li>
+				<div class="social-links-divider"></div>
+				<li>
+					<a href="https://www.instagram.com/"><img src="instagram_icon.svg" alt="" /></a>
+				</li>
+				<div class="social-links-divider"></div>
+				<li>
+					<a href="https://www.slack.com/"><img src="slack_icon.svg" alt="" /></a>
+				</li>
+				<div class="social-links-divider"></div>
+				<li>
+					<a href="https://www.reddit.com/"><img src="reddit_icon.svg" alt="" /></a>
+				</li>
+				<div class="social-links-divider"></div>
+				<li>
+					<a href="https://www.youtube.com/"><img src="youtube_icon.svg" alt="" /></a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<div class="copyright-title">
+				<p>FPC Code</p>
+			</div>
+			<div class="copyright-statement">
+				<p>&copy; Copyright 2020, FPC Code</p>
+			</div>
+		</div>
+	</footer>
 	<script src="script.js"></script>
 </html>

@@ -44,6 +44,10 @@ header {
 	z-index: 9999;
 }
 
+.menu-container {
+	position: relative;
+}
+
 .header-background {
 	background-color: black;
 	width: 100%;
@@ -97,7 +101,7 @@ header .logo-container h1 {
 	line-height: 75px;
 }
 
-.nav-links li:hover a {
+.nav-links li a:hover {
 	color: gray;
 }
 
@@ -392,32 +396,40 @@ header .logo-container h1 {
 }
 /*#endregion*/
 
-/*#region Main Page Content*/
+/*#region Page Content*/
 .content-container {
-	height: 1375px;
+	height: 500px;
 	position: relative;
-	color: black;
 }
 
-.content-container .content {
+.content-container .content-text {
 	margin: 0 15px;
 	padding-top: 15px;
 }
 
-.content-text h1 {
-	font-family: HindLight, sans-serif;
+.content-header {
+	background-color: black;
+}
+
+.content-header h1 {
+	font-family: HindSemiBold, sans-serif;
 	text-align: left;
 	font-size: 27.5px;
 	letter-spacing: 1px;
 	width: 100%;
+	height: 75px;
+	line-height: 75px;
+	color: white;
+	padding: 0 15px;
 }
 
 .content-text p {
 	font-family: HindRegular, sans-serif;
 	text-align: left;
 	font-size: 20px;
-	margin-top: 50px;
+	margin-top: 25px;
 	width: 75%;
+	color: black;
 }
 /*#endregion*/
 
