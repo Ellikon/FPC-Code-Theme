@@ -435,15 +435,52 @@ header .logo-container h1 {
 
 .content-list ul {
 	list-style: square;
+	margin: 37.5px 0;
 }
 
 .content-list li {
 	font-family: HindRegular, sans-serif;
 	font-size: 18px;
 	margin: 15px 0;
-	margin-left: 17.5px;
-	width: 75%;
+	margin-left: 25px;
+	padding-left: 5px;
+	width: 87.5%;
 	color: black;
+}
+
+.content-form {
+	width: 100%;
+	background-color: black;
+	display: block;
+	padding: 15px 15px 0 15px;
+}
+
+.content-form-section {
+	margin: 25px 0;
+}
+
+.content-form label {
+	font-family: HindRegular, sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.content-form input[type="text"] {
+	border: none;
+	width: 200px;
+	float: right;
+	height: 25px;
+	font-size: 18px;
+	line-height: 25px;
+	padding: 0 5px;
+	font-family: HindLight, sans-serif;
+}
+
+.content-form-border {
+	height: 1px;
+	background-color: white;
+	width: 100%;
+	margin-top: 15px;
 }
 /*#endregion*/
 
@@ -848,6 +885,10 @@ footer .copyright .copyright-statement {
 
 	.content-text p {
 		font-size: 18px;
+	}
+
+	.content-list li {
+		font-size: 16px;
 	}
 }
 /*#endregion*/
