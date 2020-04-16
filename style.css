@@ -459,6 +459,16 @@ header .logo-container h1 {
 	margin: 25px 0;
 }
 
+.content-form h1 {
+	font-size: 24px;
+	font-family: HindSemiBold;
+	letter-spacing: 1.5px;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	border-bottom: white 1px solid;
+}
+
 .content-form label {
 	font-family: HindRegular, sans-serif;
 	font-size: 20px;
@@ -467,7 +477,7 @@ header .logo-container h1 {
 
 .content-form input[type="text"] {
 	border: none;
-	width: 200px;
+	width: 50%;
 	float: right;
 	height: 25px;
 	font-size: 18px;
@@ -482,6 +492,22 @@ header .logo-container h1 {
 	width: 100%;
 	margin-top: 15px;
 }
+
+.content-form-radio-button {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.content-form-radio-button input[type="radio"] {
+	border: none;
+	background-color: salmon;
+}
+
+.content-radio-button label {
+	text-align: right;
+}
+
 /*#endregion*/
 
 /*#region Project Highlights*/
@@ -890,6 +916,16 @@ footer .copyright .copyright-statement {
 	.content-list li {
 		font-size: 16px;
 	}
+
+	.content-form {
+		padding: 15px 75px 0 75px;
+	}
+
+	.content-form label {
+		font-family: HindRegular, sans-serif;
+		font-size: 22px;
+		line-height: 25px;
+	}
 }
 /*#endregion*/
 
@@ -1093,6 +1129,10 @@ footer .copyright .copyright-statement {
 	.content-text p {
 		font-size: 18px;
 	}
+
+	.content-form {
+		padding: 15px 15% 0 15%;
+	}
 }
 /*#endregion*/
 
@@ -1172,6 +1212,10 @@ footer .copyright .copyright-statement {
 
 	.content-text p {
 		font-size: 18px;
+	}
+
+	.content-form {
+		padding: 15px 25% 0 25%;
 	}
 }
 /*#endregion*/
